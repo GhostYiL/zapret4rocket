@@ -391,7 +391,7 @@ Description=ttyd WebSSH Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/ttyd -p 17681 -W -a -c "${ttyd_login}": bash z4r
+ExecStart=/usr/bin/ttyd -p 17681 -W bash z4r
 Restart=always
 RestartSec=5
 
